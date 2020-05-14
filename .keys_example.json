@@ -1,0 +1,29 @@
+{
+    "fetch_from_another": false,
+    "secrets": {
+        "consumer": {
+            "key": "your_bot_consumer_key",
+            "secret_key": "your_bot_consumer_secret_key"
+        },
+        "access": {
+            "token": "your_bot_token",
+            "token_secret": "your_bot_token_secret"
+        }
+    },
+    "secrets_fetcher": {
+        "consumer": {
+            "key": "your_fetcher_consumer_key",
+            "secret_key": "your_fetcher_consumer_secret_key"
+        },
+        "access": {
+            "token": "your_fetcher_token",
+            "token_secret": "your_fetcher_token_secret"
+        }
+    },
+    "fachos": [
+        "your_facho1",
+        "your_facho2"
+    ],
+    "message": "your_lovely_message_to_the_fachos",
+    "sleep_time": "your_time_recommended_300"
+}
