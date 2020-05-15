@@ -25,7 +25,7 @@ class Bot:
             self.bot = tweepy.API(auth)
 
             if self.secrets_fetcher is None:
-                self.fetcher = Bot
+                self.fetcher = self.bot
             else:
                 auth = tweepy.OAuthHandler(
                     self.secrets_fetcher['consumer']['key'], self.secrets_fetcher['consumer']['secret_key'])
@@ -73,7 +73,7 @@ class Bot:
 
                         tweets_replied += 1
 
-                # Updates the last look up date
+                # Updates the last lookup date
                 if len(statuses) > 0 and statuses[0].created_at > self.last_lookup:
                     self.last_lookup = statuses[0].created_at
 
